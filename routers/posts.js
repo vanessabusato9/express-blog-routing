@@ -44,3 +44,29 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
+//Show - mostra singolo post
+router.get('/:id', (req, res) => {
+    res.send(`Mostro il post con id: ${req.params.id}`);
+});
+
+
+// Create - crea un nuovo post 
+router.post('/', (req, res) => {
+    res.send("Creo un nuovo post (Create)");
+});
+
+// Update - aggiorna completamente un post esistente
+router.put('/:id', (req, res) => {
+    res.send(`Aggiorno completamente il post con id: ${req.params.id} (Update)`);
+});
+
+// Modify - aggiorna parzialmente un post esistente
+router.patch('/:id', (req, res) => {
+    res.send(`Modifico parzialmente il post con id: ${req.params.id} (Modify)`);
+});
+
+// DELETE - elimina un post
+router.delete('/:id', (req, res) => {
+    res.send(`Elimino il post con id: ${req.params.id} (Delete)`);
+});
