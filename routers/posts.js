@@ -41,3 +41,5 @@ router.get('/', (req, res) => {
 
     res.json(posts);
 });
+
+module.exports = router;
