@@ -5,35 +5,35 @@ const router = express.Router();
 router.get('/', (req, res) => {
     const posts = [
         {
-            titolo: "Costa Azzurra",
+            titolo: "Costa Azzurra1",
             contenuto: "Viaggio in Costa Azzurra",
             immagine: "https://www.menevojoanna.it/dove-andare-al-mare-in-costa-azzurra/",
             tags: ["Cannes", "Monte Carlo", "Mentone"],
         },
 
         {
-            titolo: "Costa Azzurra",
+            titolo: "Costa Azzurra2",
             contenuto: "Viaggio in Costa Azzurra",
             immagine: "https://www.menevojoanna.it/dove-andare-al-mare-in-costa-azzurra/",
             tags: ["Cannes", "Monte Carlo", "Mentone"],
         },
 
         {
-            titolo: "Costa Azzurra",
+            titolo: "Costa Azzurra3",
             contenuto: "Viaggio in Costa Azzurra",
             immagine: "https://www.menevojoanna.it/dove-andare-al-mare-in-costa-azzurra/",
             tags: ["Cannes", "Monte Carlo", "Mentone"],
         },
 
         {
-            titolo: "Costa Azzurra",
+            titolo: "Costa Azzurra4",
             contenuto: "Viaggio in Costa Azzurra",
             immagine: "https://www.menevojoanna.it/dove-andare-al-mare-in-costa-azzurra/",
             tags: ["Cannes", "Monte Carlo", "Mentone"],
         },
 
         {
-            titolo: "Costa Azzurra",
+            titolo: "Costa Azzurra5",
             contenuto: "Viaggio in Costa Azzurra",
             immagine: "https://www.menevojoanna.it/dove-andare-al-mare-in-costa-azzurra/",
             tags: ["Cannes", "Monte Carlo", "Mentone"],
@@ -68,5 +68,5 @@ router.patch('/:id', (req, res) => {
 
 // DELETE - elimina un post
 router.delete('/:id', (req, res) => {
-    res.send(`Elimino il post con id: ${req.params.id} (Delete)`);
+    res.send(`Elimino il post con id: ${req.params.id}`);
 });
