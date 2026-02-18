@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
 
 // Create - crea un nuovo post 
 router.post('/', (req, res) => {
-    res.send("Creo un nuovo post (Create)");
+    res.send("Creo un nuovo post");
 });
 
 // Update - aggiorna completamente un post esistente
